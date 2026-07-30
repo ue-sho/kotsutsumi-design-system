@@ -75,17 +75,28 @@ pnpm ui storybook
 
 ## Storybook の公開
 
-Cloudflare Pages または Vercel のダッシュボードから GitHub 連携で設定する。
-デプロイ用の GitHub Actions は置かない（ダッシュボード連携と二重管理になる）。
+https://design.kotsutsumi.com で公開する。
 
-| 項目             | 値                                     |
-| ---------------- | -------------------------------------- |
-| Build command    | `pnpm install && pnpm build-storybook` |
-| Output directory | `packages/ui/storybook-static`         |
-| Node version     | 22 以上                                |
+Cloudflare Pages の設定は `infrastructure` リポジトリの
+`terraform/stacks/cloudflare/pages` で管理する。ダッシュボードで直接触ると
+Terraform の状態と食い違うため、変更は必ず tfvars 経由で行う。
 
-`build-storybook` タスクは `dependsOn: ["build"]` を持つため、トークンと
-コンポーネントのビルドが先に走る。
+このリポジトリ側でデプロイ用の GitHub Actions は置かない。Pages の GitHub
+連携が push を検知してビルドする。
+
+`sites.design` に入る値。
+
+| 項目              | 値                                                       |
+| ----------------- | -------------------------------------------------------- |
+| `build_command`   | `pnpm install --frozen-lockfile && pnpm build-storybook` |
+| `destination_dir` | `packages/ui/storybook-static`                           |
+| `root_dir`        | `.`                                                      |
+
+`destination_dir` は `root_dir` からの相対パスなので、モノレポのルートを
+`root_dir` にする場合は `packages/ui/` を含めた形で指定する。
+
+`build-storybook` タスクは `dependsOn: ["build"]` を持つため、この 1
+コマンドでトークン生成 → コンポーネントビルド → カタログ出力まで通る。
 
 ## コミット
 
