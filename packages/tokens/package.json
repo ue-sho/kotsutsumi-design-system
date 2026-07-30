@@ -1,0 +1,38 @@
+{
+  "name": "@kotsutsmi/tokens",
+  "version": "0.0.0",
+  "description": "kotsutsmi デザインシステムのデザイントークン",
+  "private": true,
+  "type": "module",
+  "main": "dist/tokens.js",
+  "types": "dist/tokens.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/tokens.d.ts",
+      "import": "./dist/tokens.js"
+    },
+    "./tokens.css": "./dist/tokens.css"
+  },
+  "files": [
+    "dist",
+    "!dist/tokens.ts"
+  ],
+  "scripts": {
+    "build": "pnpm run generate-tokens && pnpm run build:js",
+    "generate-tokens": "style-dictionary build --config style-dictionary.config.js",
+    "build:js": "tsc -p tsconfig.build.json",
+    "lint": "pnpm run /^lint:/",
+    "lint:oxlint": "oxlint .",
+    "lint:oxfmt": "oxfmt --check .",
+    "lint:type": "tsc --noEmit",
+    "lint-fix": "oxlint . --fix && oxfmt .",
+    "format": "oxfmt .",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "oxfmt": "0.60.0",
+    "oxlint": "1.71.0",
+    "style-dictionary": "5.5.0",
+    "typescript": "5.9.3"
+  }
+}

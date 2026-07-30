@@ -1,0 +1,26 @@
+{
+  "color": {
+    "semantic": {
+      "text": {
+        "primary": {
+          "value": "{color.primitive.gray.900}",
+          "description": "本文および見出し"
+        },
+        "secondary": {
+          "value": "{color.primitive.gray.700}",
+          "description": "補足情報"
+        },
+        "inverse": {
+          "value": "{color.primitive.gray.0}",
+          "description": "濃い背景の上に置く文字"
+        },
+        "accent": {
+          "value": "{color.primitive.blue.700}"
+        },
+        "disabled": {
+          "value": "{color.primitive.gray.500}"
+        }
+      }
+    }
+  }
+}

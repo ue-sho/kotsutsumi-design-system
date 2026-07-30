@@ -1,0 +1,11 @@
+{
+  "fontSize": {
+    "xs": { "value": "0.75rem" },
+    "sm": { "value": "0.875rem" },
+    "md": { "value": "1rem", "description": "本文の基準サイズ" },
+    "lg": { "value": "1.125rem" },
+    "xl": { "value": "1.25rem" },
+    "2xl": { "value": "1.5rem" },
+    "3xl": { "value": "1.875rem" }
+  }
+}

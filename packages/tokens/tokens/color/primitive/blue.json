@@ -1,0 +1,18 @@
+{
+  "color": {
+    "primitive": {
+      "blue": {
+        "50": { "value": "#e7f5ff" },
+        "100": { "value": "#d0ebff" },
+        "200": { "value": "#a5d8ff" },
+        "300": { "value": "#74c0fc" },
+        "400": { "value": "#4dabf7" },
+        "500": { "value": "#339af0" },
+        "600": { "value": "#228be6", "description": "ブランドの基準色" },
+        "700": { "value": "#1c7ed6" },
+        "800": { "value": "#1971c2" },
+        "900": { "value": "#1864ab" }
+      }
+    }
+  }
+}

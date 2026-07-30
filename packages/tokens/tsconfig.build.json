@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "dist",
+    "declaration": true,
+    "sourceMap": false,
+    "noEmit": false
+  },
+  // tsc auto-excludes outDir, which would drop the generated dist/tokens.ts
+  // input. An explicit empty exclude keeps it in the program.
+  "exclude": [],
+  "include": ["dist/tokens.ts"]
+}

@@ -1,0 +1,21 @@
+{
+  "color": {
+    "semantic": {
+      "border": {
+        "default": {
+          "value": "{color.primitive.gray.300}"
+        },
+        "strong": {
+          "value": "{color.primitive.gray.400}"
+        },
+        "accent": {
+          "value": "{color.primitive.blue.600}"
+        },
+        "focus": {
+          "value": "{color.primitive.blue.500}",
+          "description": "フォーカスリング"
+        }
+      }
+    }
+  }
+}
