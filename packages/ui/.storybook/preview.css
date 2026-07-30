@@ -1,0 +1,13 @@
+/*
+ * Storybook canvas baseline. Components must never depend on these rules —
+ * consumers get no such reset — so keep this to what only the preview needs.
+ */
+body {
+  margin: 0;
+  padding: var(--kt-spacing-lg);
+  background: var(--kt-color-semantic-bg-base);
+  color: var(--kt-color-semantic-text-primary);
+  font-family: var(--kt-font-family-sans);
+  font-size: var(--kt-font-size-md);
+  line-height: var(--kt-line-height-normal);
+}

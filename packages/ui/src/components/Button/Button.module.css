@@ -1,0 +1,116 @@
+/*
+ * Structure only. Every color, space, and radius resolves through a semantic
+ * token, so a consumer can retheme the button by redefining custom properties
+ * — the class names here are hashed at build time and cannot be targeted.
+ */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--kt-spacing-2xs);
+  border: var(--kt-border-width-thin) solid transparent;
+  border-radius: var(--kt-radius-md);
+  font-family: var(--kt-font-family-sans);
+  font-weight: var(--kt-font-weight-medium);
+  line-height: var(--kt-line-height-tight);
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.button:focus-visible {
+  outline: var(--kt-border-width-thick) solid
+    var(--kt-color-semantic-border-focus);
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
+
+/* variants */
+
+.primary {
+  background-color: var(--kt-color-semantic-bg-accent);
+  color: var(--kt-color-semantic-text-inverse);
+}
+
+.primary:hover:not(:disabled) {
+  background-color: var(--kt-color-semantic-bg-accent-hover);
+}
+
+.primary:active:not(:disabled) {
+  background-color: var(--kt-color-semantic-bg-accent-active);
+}
+
+.primary:disabled {
+  background-color: var(--kt-color-semantic-bg-disabled);
+  color: var(--kt-color-semantic-text-disabled);
+}
+
+.secondary {
+  background-color: var(--kt-color-semantic-bg-base);
+  border-color: var(--kt-color-semantic-border-default);
+  color: var(--kt-color-semantic-text-primary);
+}
+
+.secondary:hover:not(:disabled) {
+  background-color: var(--kt-color-semantic-bg-neutral-hover);
+  border-color: var(--kt-color-semantic-border-strong);
+}
+
+.secondary:active:not(:disabled) {
+  background-color: var(--kt-color-semantic-bg-neutral-active);
+}
+
+.secondary:disabled {
+  border-color: var(--kt-color-semantic-border-default);
+  color: var(--kt-color-semantic-text-disabled);
+}
+
+.ghost {
+  background-color: transparent;
+  color: var(--kt-color-semantic-text-accent);
+}
+
+.ghost:hover:not(:disabled) {
+  background-color: var(--kt-color-semantic-bg-neutral-hover);
+}
+
+.ghost:active:not(:disabled) {
+  background-color: var(--kt-color-semantic-bg-neutral-active);
+}
+
+.ghost:disabled {
+  color: var(--kt-color-semantic-text-disabled);
+}
+
+/* sizes */
+
+.sm {
+  min-height: 2rem;
+  padding: 0 var(--kt-spacing-sm);
+  font-size: var(--kt-font-size-sm);
+}
+
+.md {
+  min-height: 2.5rem;
+  padding: 0 var(--kt-spacing-md);
+  font-size: var(--kt-font-size-md);
+}
+
+.lg {
+  min-height: 3rem;
+  padding: 0 var(--kt-spacing-lg);
+  font-size: var(--kt-font-size-lg);
+}
+
+/* modifiers */
+
+.fullWidth {
+  width: 100%;
+}

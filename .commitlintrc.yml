@@ -1,2 +1,8 @@
 extends:
   - "@commitlint/config-conventional"
+rules:
+  # 日本語の件名では case の判定が働かず、コンポーネント名 (Button) や
+  # 固有名詞の大文字だけを誤検知するため無効化する。
+  subject-case: [0]
+  # 日本語は 1 文字あたりの情報量が多いので既定の 100 文字は過剰。
+  header-max-length: [2, always, 72]
