@@ -1,0 +1,8 @@
+packages:
+  - "packages/*"
+allowBuilds:
+  esbuild: true
+  lefthook: true
+autoInstallPeers: true
+engineStrict: true
+saveExact: true

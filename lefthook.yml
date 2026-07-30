@@ -1,0 +1,19 @@
+# Git hooks managed by lefthook
+pre-commit:
+  parallel: true
+  commands:
+    oxfmt:
+      glob: '*.{js,cjs,mjs,jsx,ts,cts,mts,tsx,json}'
+      run: pnpm exec oxfmt {staged_files}
+      stage_fixed: true
+
+commit-msg:
+  commands:
+    commitlint:
+      run: pnpm exec commitlint --edit {1}
+
+# Run the full lint; turbo caches per package, so unchanged ones are skipped.
+pre-push:
+  commands:
+    lint:
+      run: pnpm run lint
