@@ -1,7 +1,7 @@
 {
   "lineHeight": {
-    "tight": { "value": "1.25", "description": "見出し・ボタンラベル" },
-    "normal": { "value": "1.5" },
-    "relaxed": { "value": "1.75", "description": "長文の本文" }
+    "tight": { "value": "1.2", "description": "見出し・ボタンラベル" },
+    "normal": { "value": "1.6", "description": "既定の行送り" },
+    "relaxed": { "value": "1.9", "description": "長文の本文" }
   }
 }

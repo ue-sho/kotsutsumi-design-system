@@ -3,15 +3,15 @@
     "sans": {
       "value": [
         "system-ui",
-        "-apple-system",
-        "Hiragino Sans",
-        "Noto Sans JP",
+        "BIZ UDPGothic",
+        "Hiragino Kaku Gothic ProN",
+        "Meiryo",
         "sans-serif"
       ],
       "description": "本文の既定書体"
     },
     "mono": {
-      "value": ["ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
+      "value": ["ui-monospace", "JetBrains Mono", "Consolas", "monospace"],
       "description": "コード表示"
     }
   }

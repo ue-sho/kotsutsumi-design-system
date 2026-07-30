@@ -15,7 +15,7 @@
           "description": "濃い背景の上に置く文字"
         },
         "accent": {
-          "value": "{color.primitive.blue.700}"
+          "value": "{color.primitive.brand.700}"
         },
         "disabled": {
           "value": "{color.primitive.gray.500}"

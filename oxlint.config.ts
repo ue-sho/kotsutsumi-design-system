@@ -11,6 +11,9 @@ export default defineConfig({
     'no-console': 'warn',
     'typescript/consistent-type-imports': 'error',
     'react/jsx-key': 'error',
+    // The automatic JSX runtime (React 17+) injects the factory itself, so a
+    // React import is not required to be in scope.
+    'react/react-in-jsx-scope': 'off',
   },
   ignorePatterns: [
     'dist',

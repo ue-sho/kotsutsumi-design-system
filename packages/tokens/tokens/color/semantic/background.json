@@ -11,14 +11,14 @@
           "description": "面を一段下げたい領域の背景"
         },
         "accent": {
-          "value": "{color.primitive.blue.600}",
+          "value": "{color.primitive.brand.600}",
           "description": "主要アクションの背景"
         },
         "accent-hover": {
-          "value": "{color.primitive.blue.700}"
+          "value": "{color.primitive.brand.700}"
         },
         "accent-active": {
-          "value": "{color.primitive.blue.800}"
+          "value": "{color.primitive.brand.800}"
         },
         "neutral-hover": {
           "value": "{color.primitive.gray.100}"

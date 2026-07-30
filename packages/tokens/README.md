@@ -51,11 +51,11 @@ import { tokens } from '@kotsutsmi/tokens';
 
 ## コマンド
 
-| コマンド | 内容 |
-|---|---|
+| コマンド     | 内容                                             |
+| ------------ | ------------------------------------------------ |
 | `pnpm build` | JSON → `dist/{tokens.css,tokens.js,tokens.d.ts}` |
-| `pnpm lint` | oxlint + oxfmt + tsc |
-| `pnpm clean` | `dist` を削除 |
+| `pnpm lint`  | oxlint + oxfmt + tsc                             |
+| `pnpm clean` | `dist` を削除                                    |
 
 ## ダークモードの追加方法
 

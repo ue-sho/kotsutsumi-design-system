@@ -9,10 +9,10 @@
           "value": "{color.primitive.gray.400}"
         },
         "accent": {
-          "value": "{color.primitive.blue.600}"
+          "value": "{color.primitive.brand.600}"
         },
         "focus": {
-          "value": "{color.primitive.blue.500}",
+          "value": "{color.primitive.brand.500}",
           "description": "フォーカスリング"
         }
       }
