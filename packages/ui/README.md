@@ -1,15 +1,15 @@
-# @kotsutsmi/ui
+# @kotsutsumi/ui
 
-kotsutsmi デザインシステムの UI コンポーネント。
+kotsutsumi デザインシステムの UI コンポーネント。
 
 ## 使い方
 
 CSS を 2 つ読み込む。トークンが先でなければコンポーネントの `var()` 参照が解決しない。
 
 ```ts
-import '@kotsutsmi/tokens/tokens.css';
-import '@kotsutsmi/ui/styles.css';
-import { Button } from '@kotsutsmi/ui';
+import '@kotsutsumi/tokens/tokens.css';
+import '@kotsutsumi/ui/styles.css';
+import { Button } from '@kotsutsumi/ui';
 
 <Button variant="primary" size="md">送信</Button>;
 ```

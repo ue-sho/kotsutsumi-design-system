@@ -47,7 +47,7 @@ importers:
 
   packages/ui:
     devDependencies:
-      '@kotsutsmi/tokens':
+      '@kotsutsumi/tokens':
         specifier: workspace:*
         version: link:../tokens
       '@storybook/addon-a11y':

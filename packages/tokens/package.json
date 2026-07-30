@@ -1,7 +1,7 @@
 {
-  "name": "@kotsutsmi/tokens",
+  "name": "@kotsutsumi/tokens",
   "version": "0.0.0",
-  "description": "kotsutsmi デザインシステムのデザイントークン",
+  "description": "kotsutsumi デザインシステムのデザイントークン",
   "private": true,
   "type": "module",
   "main": "dist/tokens.js",

@@ -1,5 +1,5 @@
 {
-  "name": "kotsutsmi-design-system",
+  "name": "kotsutsumi-design-system",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,9 +9,9 @@
     "lint-fix": "turbo run lint-fix --cache-dir=.turbo",
     "format": "turbo run format --cache-dir=.turbo",
     "build-storybook": "turbo run build-storybook --cache-dir=.turbo",
-    "storybook": "pnpm --filter @kotsutsmi/ui storybook",
-    "tokens": "pnpm --filter @kotsutsmi/tokens",
-    "ui": "pnpm --filter @kotsutsmi/ui",
+    "storybook": "pnpm --filter @kotsutsumi/ui storybook",
+    "tokens": "pnpm --filter @kotsutsumi/tokens",
+    "ui": "pnpm --filter @kotsutsumi/ui",
     "prepare": "lefthook install"
   },
   "devDependencies": {

@@ -1,13 +1,13 @@
-# kotsutsmi Design System
+# kotsutsumi Design System
 
-個人サイト kotsutsmi のデザインシステム。
+個人サイト kotsutsumi のデザインシステム。
 
 ## 構成
 
 ```
 packages/
-├─ tokens/   @kotsutsmi/tokens  デザイントークン (Style Dictionary)
-└─ ui/       @kotsutsmi/ui      React コンポーネント + Storybook
+├─ tokens/   @kotsutsumi/tokens  デザイントークン (Style Dictionary)
+└─ ui/       @kotsutsumi/ui      React コンポーネント + Storybook
 ```
 
 pnpm workspace + Turborepo。`ui` のビルドは `tokens/dist` を必要とするため、

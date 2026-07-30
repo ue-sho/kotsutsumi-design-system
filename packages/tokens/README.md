@@ -1,6 +1,6 @@
-# @kotsutsmi/tokens
+# @kotsutsumi/tokens
 
-kotsutsmi デザインシステムのデザイントークン。
+kotsutsumi デザインシステムのデザイントークン。
 
 ## 構成
 
@@ -43,10 +43,10 @@ tokens/
 
 ```ts
 // CSS 変数
-import '@kotsutsmi/tokens/tokens.css';
+import '@kotsutsumi/tokens/tokens.css';
 
 // TypeScript から値を参照
-import { tokens } from '@kotsutsmi/tokens';
+import { tokens } from '@kotsutsumi/tokens';
 ```
 
 ## コマンド
