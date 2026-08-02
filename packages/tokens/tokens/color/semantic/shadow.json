@@ -1,0 +1,12 @@
+{
+  "color": {
+    "semantic": {
+      "shadow": {
+        "subtle": {
+          "value": "{color.primitive.overlay.black-6}",
+          "description": "影に使う中立の透過色"
+        }
+      }
+    }
+  }
+}

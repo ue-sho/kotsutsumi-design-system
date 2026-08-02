@@ -31,59 +31,63 @@
   font-size: var(--kt-font-size-lg);
 }
 
-.prose :where(h1, h2, h3) {
+/*
+ * Keep prose defaults at zero specificity so composed primitives (Heading,
+ * Text, Link) can always override via their class selectors.
+ */
+:where(.prose) :where(h1, h2, h3) {
   margin: 0;
   color: var(--kt-color-semantic-text-primary);
   font-weight: var(--kt-font-weight-bold);
   line-height: var(--kt-line-height-tight);
 }
 
-.prose h1 {
+:where(.prose) :where(h1) {
   font-size: var(--kt-font-size-3xl);
 }
 
-.prose h2 {
+:where(.prose) :where(h2) {
   font-size: var(--kt-font-size-2xl);
 }
 
-.prose h3 {
+:where(.prose) :where(h3) {
   font-size: var(--kt-font-size-xl);
 }
 
-.prose :where(h2, h3) {
+:where(.prose) :where(h2, h3) {
   margin-top: var(--kt-spacing-2xl);
 }
 
-.prose :where(h1, h2, h3) + p {
+:where(.prose) :where(h1, h2, h3) + :where(p) {
   margin-top: var(--kt-spacing-sm);
 }
 
-.prose p {
+:where(.prose) :where(p) {
   margin: var(--kt-spacing-md) 0 0;
 }
 
-.prose ul,
-.prose ol {
+:where(.prose) :where(ul),
+:where(.prose) :where(ol) {
   margin: var(--kt-spacing-md) 0 0;
   padding-inline-start: var(--kt-spacing-xl);
 }
 
-.prose li + li {
+:where(.prose) :where(li) + :where(li) {
   margin-top: var(--kt-spacing-2xs);
 }
 
-.prose a {
+:where(.prose) :where(a) {
   color: var(--kt-color-semantic-text-accent);
   text-decoration-color: currentColor;
   text-decoration-thickness: from-font;
   text-underline-offset: 0.12em;
 }
 
-.prose a:hover {
+:where(.prose) :where(a:hover) {
   color: var(--kt-color-semantic-text-accent-subtle);
 }
 
-.prose blockquote {
+:where(.prose) :where(blockquote) {
   margin: var(--kt-spacing-lg) 0 0;
   padding-inline-start: var(--kt-spacing-md);
   border-inline-start: var(--kt-border-width-thick) solid
@@ -91,27 +95,27 @@
   color: var(--kt-color-semantic-text-secondary);
 }
 
-.prose hr {
+:where(.prose) :where(hr) {
   margin: var(--kt-spacing-xl) 0 0;
   border: 0;
   border-top: var(--kt-border-width-thin) solid
     var(--kt-color-semantic-border-default);
 }
 
-.prose code {
+:where(.prose) :where(code) {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.9em;
 }
 
-.prose p code,
-.prose li code,
-.prose blockquote code {
+:where(.prose) :where(p code),
+:where(.prose) :where(li code),
+:where(.prose) :where(blockquote code) {
   padding: 0.05em 0.4em;
   border-radius: var(--kt-radius-sm);
   background: var(--kt-color-semantic-bg-subtle);
 }
 
-.prose pre {
+:where(.prose) :where(pre) {
   margin: var(--kt-spacing-lg) 0 0;
   padding: var(--kt-spacing-md);
   border-radius: var(--kt-radius-md);
@@ -119,12 +123,12 @@
   background: var(--kt-color-semantic-bg-subtle);
 }
 
-.prose pre code {
+:where(.prose) :where(pre code) {
   padding: 0;
   background: transparent;
 }
 
-.prose img {
+:where(.prose) :where(img) {
   display: block;
   max-width: 100%;
   height: auto;

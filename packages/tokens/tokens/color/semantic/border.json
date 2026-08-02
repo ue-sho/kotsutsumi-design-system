@@ -2,6 +2,10 @@
   "color": {
     "semantic": {
       "border": {
+        "subtle": {
+          "value": "{color.primitive.gray.200}",
+          "description": "存在を主張しない控えめな境界線"
+        },
         "default": {
           "value": "{color.primitive.gray.300}"
         },
