@@ -1,0 +1,60 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.alignStretch {
+  align-items: stretch;
+}
+
+.alignStart {
+  align-items: flex-start;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.alignEnd {
+  align-items: flex-end;
+}
+
+.gapNone {
+  gap: var(--kt-spacing-none);
+}
+
+.gap3xs {
+  gap: var(--kt-spacing-3xs);
+}
+
+.gap2xs {
+  gap: var(--kt-spacing-2xs);
+}
+
+.gapXs {
+  gap: var(--kt-spacing-xs);
+}
+
+.gapSm {
+  gap: var(--kt-spacing-sm);
+}
+
+.gapMd {
+  gap: var(--kt-spacing-md);
+}
+
+.gapLg {
+  gap: var(--kt-spacing-lg);
+}
+
+.gapXl {
+  gap: var(--kt-spacing-xl);
+}
+
+.gap2xl {
+  gap: var(--kt-spacing-2xl);
+}
+
+.gap3xl {
+  gap: var(--kt-spacing-3xl);
+}
