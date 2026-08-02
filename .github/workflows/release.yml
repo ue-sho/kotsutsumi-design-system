@@ -34,13 +34,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Debug npm auth and registry
-        run: |
-          npm -v
-          node -v
-          npm whoami || echo "whoami failed (expected with OIDC trusted publishing)"
-          npm config get registry
-
       - name: Create release PR or publish
         uses: changesets/action@v1
         with:
