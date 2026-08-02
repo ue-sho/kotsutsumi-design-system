@@ -71,7 +71,7 @@ importers:
       '@types/react-dom':
         specifier: 19.2.1
         version: 19.2.1(@types/react@19.2.2)
-      '@ue-sho/kotsutsumi-tokens':
+      '@uesho/kotsutsumi-tokens':
         specifier: workspace:*
         version: link:../tokens
       '@vitejs/plugin-react':

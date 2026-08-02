@@ -42,7 +42,7 @@ export const Playground: Story = {
       </ul>
       <blockquote>小さく作って、毎日少しずつ積み上げる。</blockquote>
       <pre>
-        <code>{`pnpm --filter @ue-sho/kotsutsumi-ui storybook`}</code>
+        <code>{`pnpm --filter @uesho/kotsutsumi-ui storybook`}</code>
       </pre>
       <hr />
       <p>

@@ -26,7 +26,7 @@ jobs:
           node-version: 22
           package-manager-cache: false
           registry-url: https://registry.npmjs.org
-          scope: '@ue-sho'
+          scope: '@uesho'
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile

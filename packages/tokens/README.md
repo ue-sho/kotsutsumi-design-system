@@ -1,4 +1,4 @@
-# @ue-sho/kotsutsumi-tokens
+# @uesho/kotsutsumi-tokens
 
 kotsutsumi デザインシステムのデザイントークン。
 
@@ -59,10 +59,10 @@ transition: background-color var(--kt-motion-duration-fast)
 
 ```ts
 // CSS 変数
-import '@ue-sho/kotsutsumi-tokens/tokens.css';
+import '@uesho/kotsutsumi-tokens/tokens.css';
 
 // TypeScript から値を参照
-import { tokens } from '@ue-sho/kotsutsumi-tokens';
+import { tokens } from '@uesho/kotsutsumi-tokens';
 ```
 
 ## コマンド
