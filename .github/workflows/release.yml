@@ -26,6 +26,7 @@ jobs:
           node-version: 22
           package-manager-cache: false
           registry-url: https://registry.npmjs.org
+          scope: '@uesho'
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -39,3 +40,4 @@ jobs:
           commit: 'chore: release packages'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_CONFIG_PROVENANCE: true
