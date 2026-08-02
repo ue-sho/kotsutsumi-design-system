@@ -68,6 +68,8 @@ import { tokens } from '@kotsutsumi/tokens';
 }
 ```
 
-## 既知の制約
+## 備考
 
-`--kt-font-family-sans` の値は空白を含むフォント名（`Hiragino Sans` 等）がクォートされずに出力される。全ブラウザが解釈するため実害はないが、厳密には CSS 仕様に沿わない。クォートが必要になった場合は Style Dictionary に custom transform を追加する。
+空白を含むフォント名（`Hiragino Sans` など）は Style Dictionary の custom
+transform で自動的にクォートして出力している。`serif` や `sans-serif` などの
+generic family はクォートしない。

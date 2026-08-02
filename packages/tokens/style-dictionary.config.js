@@ -26,6 +26,46 @@ StyleDictionary.registerPreprocessor({
   preprocessor: copyDescriptionToComment,
 });
 
+const GENERIC_FONT_FAMILY = new Set([
+  'serif',
+  'sans-serif',
+  'monospace',
+  'cursive',
+  'fantasy',
+  'system-ui',
+  'ui-serif',
+  'ui-sans-serif',
+  'ui-monospace',
+  'ui-rounded',
+  'emoji',
+  'math',
+  'fangsong',
+]);
+
+/**
+ * Quote font names containing spaces (e.g. `Hiragino Sans`) so the generated
+ * CSS is standards-compliant while keeping generic family keywords unquoted.
+ */
+StyleDictionary.registerTransform({
+  name: 'fontFamily/cssQuoted',
+  type: 'value',
+  transitive: true,
+  transform: (token) => {
+    if (token.path?.[0] !== 'fontFamily' || !Array.isArray(token.value)) {
+      return token.value;
+    }
+
+    return token.value
+      .map((family) => {
+        if (GENERIC_FONT_FAMILY.has(family) || !family.includes(' ')) {
+          return family;
+        }
+        return `"${family}"`;
+      })
+      .join(', ');
+  },
+});
+
 const transforms = [
   'attribute/cti',
   'name/kebab',
@@ -33,7 +73,7 @@ const transforms = [
   'html/icon',
   'color/css',
   'asset/url',
-  'fontFamily/css',
+  'fontFamily/cssQuoted',
   'cubicBezier/css',
   'strokeStyle/css/shorthand',
   'border/css/shorthand',

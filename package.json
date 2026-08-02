@@ -8,6 +8,7 @@
     "lint": "turbo run lint --cache-dir=.turbo",
     "lint-fix": "turbo run lint-fix --cache-dir=.turbo",
     "format": "turbo run format --cache-dir=.turbo",
+    "format:check": "turbo run format:check --cache-dir=.turbo",
     "build-storybook": "turbo run build-storybook --cache-dir=.turbo",
     "storybook": "pnpm --filter @kotsutsumi/ui storybook",
     "tokens": "pnpm --filter @kotsutsumi/tokens",

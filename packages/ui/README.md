@@ -4,15 +4,18 @@ kotsutsumi デザインシステムの UI コンポーネント。
 
 ## 使い方
 
-CSS を 2 つ読み込む。トークンが先でなければコンポーネントの `var()` 参照が解決しない。
+コンポーネント CSS にトークンを内包しているため、基本は `@kotsutsumi/ui/styles.css`
+だけを読み込めば動く。
 
 ```ts
-import '@kotsutsumi/tokens/tokens.css';
 import '@kotsutsumi/ui/styles.css';
 import { Button } from '@kotsutsumi/ui';
 
 <Button variant="primary" size="md">送信</Button>;
 ```
+
+トークン値を TypeScript から参照したい場合だけ、`@kotsutsumi/tokens` を追加で import
+する。
 
 ## スタイリングの方針
 
