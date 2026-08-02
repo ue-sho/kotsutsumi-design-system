@@ -43,6 +43,8 @@ pnpm storybook   # http://localhost:6006
 | `pnpm build-storybook` | Storybook を静的ビルド |
 | `pnpm lint`            | oxlint + oxfmt + tsc   |
 | `pnpm lint-fix`        | 自動修正               |
+| `pnpm changeset`       | リリースノート作成     |
+| `pnpm version-packages`| versions/changelog 更新 |
 
 個別のパッケージを叩く場合。
 
@@ -108,3 +110,17 @@ fix(tokens): セマンティック変数の参照切れを修正
 ```
 
 pre-commit で staged ファイルに oxfmt、pre-push で全体 lint が走る。
+
+## npm パッケージ公開
+
+`@kotsutsumi/tokens` と `@kotsutsumi/ui` は npm 公開を想定している。
+
+1. 変更ごとに `pnpm changeset` で changeset を作成
+2. main へのマージ後、GitHub Actions が release PR を自動更新
+3. release PR をマージすると npm publish が実行される（`NPM_TOKEN` が必要）
+
+利用側は以下で導入できる。
+
+```sh
+pnpm add @kotsutsumi/ui
+```
