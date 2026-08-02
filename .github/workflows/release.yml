@@ -33,7 +33,7 @@ jobs:
 
       - name: Debug npm auth and registry
         run: |
-          npm whoami
+          npm whoami || echo "whoami failed (expected with OIDC trusted publishing)"
           npm config get registry
 
       - name: Create release PR or publish
