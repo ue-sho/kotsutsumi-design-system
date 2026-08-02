@@ -1,0 +1,12 @@
+.root {
+  text-align: center;
+}
+
+.content {
+  margin-inline: auto;
+  max-width: 34rem;
+}
+
+.action {
+  padding-top: var(--kt-spacing-sm);
+}

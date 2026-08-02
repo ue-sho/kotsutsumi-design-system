@@ -1,4 +1,6 @@
 import { expect, within } from 'storybook/test';
+import { Heading } from '../Heading';
+import { Text } from '../Text';
 import { Prose } from './Prose';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
@@ -57,5 +59,41 @@ export const Playground: Story = {
     ).toBeVisible();
     await expect(canvas.getByText('気になったこと')).toBeVisible();
     await expect(canvas.getByText(/inline code 例/)).toBeVisible();
+  },
+};
+
+export const ComposedPrimitives: Story = {
+  parameters: { layout: 'padded' },
+  render: (args) => (
+    <div>
+      <Heading level={2} size="sm" tone="muted">
+        単独の見出し
+      </Heading>
+      <Text size="sm" tone="secondary">
+        単独の本文
+      </Text>
+      <Prose {...args}>
+        <Heading level={2} size="sm" tone="muted">
+          Prose 内の見出し
+        </Heading>
+        <Text size="sm" tone="secondary">
+          Prose 内の本文
+        </Text>
+      </Prose>
+    </div>
+  ),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const typography = (label: string) => {
+      const { color, fontSize } = getComputedStyle(canvas.getByText(label));
+      return { color, fontSize };
+    };
+
+    await expect(typography('Prose 内の見出し')).toEqual(
+      typography('単独の見出し'),
+    );
+    await expect(typography('Prose 内の本文')).toEqual(
+      typography('単独の本文'),
+    );
   },
 };

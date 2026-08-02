@@ -1,0 +1,56 @@
+.card {
+  box-sizing: border-box;
+}
+
+.outlined {
+  border: var(--kt-border-width-thin) solid
+    var(--kt-color-semantic-border-default);
+  background: var(--kt-color-semantic-bg-base);
+}
+
+.subtle {
+  border: var(--kt-border-width-thin) solid
+    var(--kt-color-semantic-border-default);
+  background: var(--kt-color-semantic-bg-subtle);
+}
+
+.filled {
+  background: var(--kt-color-semantic-bg-base);
+  box-shadow: var(--kt-shadow-sm);
+}
+
+.paddingSm {
+  padding: var(--kt-spacing-sm);
+}
+
+.paddingMd {
+  padding: var(--kt-spacing-md);
+}
+
+.paddingLg {
+  padding: var(--kt-spacing-lg);
+}
+
+.radiusSm {
+  border-radius: var(--kt-radius-sm);
+}
+
+.radiusMd {
+  border-radius: var(--kt-radius-md);
+}
+
+.radiusLg {
+  border-radius: var(--kt-radius-lg);
+}
+
+.tonePrimary {
+  color: var(--kt-color-semantic-text-primary);
+}
+
+.toneSecondary {
+  color: var(--kt-color-semantic-text-secondary);
+}
+
+.toneMuted {
+  color: var(--kt-color-semantic-text-muted);
+}
