@@ -2,7 +2,9 @@
   "name": "@kotsutsumi/tokens",
   "version": "0.0.0",
   "description": "kotsutsumi デザインシステムのデザイントークン",
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "main": "dist/tokens.js",
   "types": "dist/tokens.d.ts",
