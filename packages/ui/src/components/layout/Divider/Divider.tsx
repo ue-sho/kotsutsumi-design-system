@@ -10,7 +10,7 @@ export type DividerProps = {
   orientation?: DividerOrientation;
   tone?: DividerTone;
   inset?: DividerInset;
-} & Omit<ComponentPropsWithoutRef<'div'>, 'role'>;
+} & Omit<ComponentPropsWithoutRef<'div'>, 'role' | 'aria-orientation'>;
 
 const orientationClass: Record<DividerOrientation, string> = {
   horizontal: styles.horizontal,
@@ -49,10 +49,10 @@ export function Divider({
 
   return (
     <div
+      {...props}
       role="separator"
       aria-orientation={orientation}
       className={classes}
-      {...props}
     />
   );
 }
