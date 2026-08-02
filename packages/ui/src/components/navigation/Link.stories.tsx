@@ -1,3 +1,4 @@
+import { expect, within } from 'storybook/test';
 import { Link } from './Link';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
@@ -21,12 +22,25 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Internal: Story = {};
+export const Internal: Story = {
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const link = canvas.getByRole('link', { name: '記事を読む' });
+    await expect(link).toHaveAttribute('href', '/diary/hello-world');
+    await expect(link).not.toHaveAttribute('target');
+  },
+};
 
 export const External: Story = {
   args: {
     href: 'https://example.com',
     children: '外部サイト',
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const link = canvas.getByRole('link', { name: '外部サイト' });
+    await expect(link).toHaveAttribute('target', '_blank');
+    await expect(link).toHaveAttribute('rel', 'noopener noreferrer');
   },
 };
 

@@ -1,3 +1,4 @@
+import { expect, within } from 'storybook/test';
 import { Stack } from './Stack';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
@@ -64,4 +65,10 @@ export const Playground: Story = {
       </div>
     </Stack>
   ),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    await expect(canvas.getByText('First block')).toBeVisible();
+    await expect(canvas.getByText('Second block')).toBeVisible();
+    await expect(canvas.getByText('Third block')).toBeVisible();
+  },
 };

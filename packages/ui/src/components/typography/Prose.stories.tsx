@@ -1,3 +1,4 @@
+import { expect, within } from 'storybook/test';
 import { Prose } from './Prose';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
@@ -49,4 +50,12 @@ export const Playground: Story = {
       </p>
     </Prose>
   ),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    await expect(
+      canvas.getByRole('heading', { level: 1, name: '今日の日記' }),
+    ).toBeVisible();
+    await expect(canvas.getByText('気になったこと')).toBeVisible();
+    await expect(canvas.getByText(/inline code 例/)).toBeVisible();
+  },
 };

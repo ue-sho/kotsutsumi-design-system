@@ -1,3 +1,4 @@
+import { expect, within } from 'storybook/test';
 import { Container } from './Container';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
@@ -42,4 +43,24 @@ export const Playground: Story = {
       <Panel />
     </Container>
   ),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    await expect(canvas.getByText('Container content')).toBeVisible();
+  },
+};
+
+export const SemanticMain: Story = {
+  args: {
+    as: 'main',
+  },
+  parameters: { layout: 'fullscreen' },
+  render: (args) => (
+    <Container {...args}>
+      <Panel />
+    </Container>
+  ),
+  play: async ({ canvasElement }) => {
+    const main = canvasElement.querySelector('main');
+    await expect(main).not.toBeNull();
+  },
 };
