@@ -1,20 +1,20 @@
-# @kotsutsumi/ui
+# @uesho/kotsutsumi-ui
 
 kotsutsumi デザインシステムの UI コンポーネント。
 
 ## 使い方
 
-コンポーネント CSS にトークンを内包しているため、基本は `@kotsutsumi/ui/styles.css`
+コンポーネント CSS にトークンを内包しているため、基本は `@uesho/kotsutsumi-ui/styles.css`
 だけを読み込めば動く。
 
 ```ts
-import '@kotsutsumi/ui/styles.css';
-import { Button } from '@kotsutsumi/ui';
+import '@uesho/kotsutsumi-ui/styles.css';
+import { Button } from '@uesho/kotsutsumi-ui';
 
 <Button variant="primary" size="md">送信</Button>;
 ```
 
-トークン値を TypeScript から参照したい場合だけ、`@kotsutsumi/tokens` を追加で import
+トークン値を TypeScript から参照したい場合だけ、`@uesho/kotsutsumi-tokens` を追加で import
 する。
 
 ## スタイリングの方針

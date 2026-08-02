@@ -1,5 +1,5 @@
 {
-  "name": "@kotsutsumi/ui",
+  "name": "@uesho/kotsutsumi-ui",
   "version": "0.0.0",
   "description": "kotsutsumi デザインシステムの UI コンポーネント",
   "publishConfig": {
@@ -41,7 +41,7 @@
     "defaults and fully supports es6-module"
   ],
   "devDependencies": {
-    "@kotsutsumi/tokens": "workspace:*",
+    "@uesho/kotsutsumi-tokens": "workspace:*",
     "@storybook/addon-a11y": "10.5.5",
     "@storybook/addon-docs": "10.5.5",
     "@storybook/addon-mcp": "0.7.0",
