@@ -8,6 +8,9 @@
     "lint": "turbo run lint --cache-dir=.turbo",
     "lint-fix": "turbo run lint-fix --cache-dir=.turbo",
     "format": "turbo run format --cache-dir=.turbo",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && changeset publish",
     "build-storybook": "turbo run build-storybook --cache-dir=.turbo",
     "storybook": "pnpm --filter @kotsutsumi/ui storybook",
     "tokens": "pnpm --filter @kotsutsumi/tokens",
@@ -15,6 +18,7 @@
     "prepare": "lefthook install"
   },
   "devDependencies": {
+    "@changesets/cli": "2.31.1",
     "@commitlint/cli": "21.2.1",
     "@commitlint/config-conventional": "21.2.0",
     "lefthook": "2.1.10",
