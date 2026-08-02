@@ -13,9 +13,9 @@
     "version-packages": "changeset version",
     "release": "pnpm build && changeset publish",
     "build-storybook": "turbo run build-storybook --cache-dir=.turbo",
-    "storybook": "pnpm --filter @uesho/kotsutsumi-ui storybook",
-    "tokens": "pnpm --filter @uesho/kotsutsumi-tokens",
-    "ui": "pnpm --filter @uesho/kotsutsumi-ui",
+    "storybook": "pnpm --filter @ue-sho/kotsutsumi-ui storybook",
+    "tokens": "pnpm --filter @ue-sho/kotsutsumi-tokens",
+    "ui": "pnpm --filter @ue-sho/kotsutsumi-ui",
     "prepare": "lefthook install"
   },
   "devDependencies": {

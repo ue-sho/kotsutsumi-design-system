@@ -6,8 +6,8 @@
 
 ```
 packages/
-├─ tokens/   @uesho/kotsutsumi-tokens  デザイントークン (Style Dictionary)
-└─ ui/       @uesho/kotsutsumi-ui      React コンポーネント + Storybook
+├─ tokens/   @ue-sho/kotsutsumi-tokens  デザイントークン (Style Dictionary)
+└─ ui/       @ue-sho/kotsutsumi-ui      React コンポーネント + Storybook
 ```
 
 pnpm workspace + Turborepo。`ui` のビルドは `tokens/dist` を必要とするため、
@@ -113,18 +113,18 @@ pre-commit で staged ファイルに oxfmt、pre-push で全体 lint が走る�
 
 ## npm パッケージ公開
 
-`@uesho/kotsutsumi-tokens` と `@uesho/kotsutsumi-ui` は npm 公開を想定している。
+`@ue-sho/kotsutsumi-tokens` と `@ue-sho/kotsutsumi-ui` は npm 公開を想定している。
 
 1. 変更ごとに `pnpm changeset` で changeset を作成
 2. main へのマージ後、GitHub Actions が release PR を自動更新
 3. release PR をマージすると npm publish が実行される（Trusted Publishing）
 
-Trusted Publishing を使うため、npm 側で `@uesho/kotsutsumi-tokens` と
-`@uesho/kotsutsumi-ui` に対して GitHub Actions の Trusted Publisher を設定する。
+Trusted Publishing を使うため、npm 側で `@ue-sho/kotsutsumi-tokens` と
+`@ue-sho/kotsutsumi-ui` に対して GitHub Actions の Trusted Publisher を設定する。
 `NPM_TOKEN` は不要。
 
 利用側は以下で導入できる。
 
 ```sh
-pnpm add @uesho/kotsutsumi-ui
+pnpm add @ue-sho/kotsutsumi-ui
 ```

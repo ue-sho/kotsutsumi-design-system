@@ -1,5 +1,5 @@
 {
-  "name": "@uesho/kotsutsumi-ui",
+  "name": "@ue-sho/kotsutsumi-ui",
   "version": "0.0.0",
   "description": "kotsutsumi デザインシステムの UI コンポーネント",
   "publishConfig": {
@@ -49,7 +49,7 @@
     "@storybook/react-vite": "10.5.5",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.1",
-    "@uesho/kotsutsumi-tokens": "workspace:*",
+    "@ue-sho/kotsutsumi-tokens": "workspace:*",
     "@vitejs/plugin-react": "5.0.4",
     "@vitest/browser-playwright": "4.1.10",
     "autoprefixer": "10.5.4",
