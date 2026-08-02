@@ -7,8 +7,8 @@
           "description": "ページの基準背景"
         },
         "subtle": {
-          "value": "{color.primitive.brand.100}",
-          "description": "面を一段下げたい領域の背景"
+          "value": "{color.primitive.gray.100}",
+          "description": "面を一段下げたい中立背景"
         },
         "accent-subtle": {
           "value": "{color.primitive.brand.100}",

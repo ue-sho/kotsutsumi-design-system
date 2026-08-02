@@ -50,6 +50,11 @@ transition: background-color var(--kt-motion-duration-fast)
   var(--kt-motion-easing-standard);
 ```
 
+## Neutral（gray）トークン
+
+`gray` は Layered Craft の方針に合わせ、青緑寄りの低彩度ランプとして定義する。
+ブランド色を邪魔せず、面の階層と可読性を安定させる役割を持つ。
+
 ## 使い方
 
 ```ts

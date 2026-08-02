@@ -3,16 +3,16 @@
     "primitive": {
       "gray": {
         "0": { "value": "#ffffff", "description": "純白" },
-        "50": { "value": "#faf9f7" },
-        "100": { "value": "#f2f0ec" },
-        "200": { "value": "#e5e2db" },
-        "300": { "value": "#cfcbc1" },
-        "400": { "value": "#a8a49a" },
-        "500": { "value": "#7d7a72" },
-        "600": { "value": "#5c594f" },
-        "700": { "value": "#413f38" },
-        "800": { "value": "#2b2926" },
-        "900": { "value": "#1a1917" },
+        "50": { "value": "#f6f8f8" },
+        "100": { "value": "#edf1f1" },
+        "200": { "value": "#dce5e5" },
+        "300": { "value": "#c5d2d2" },
+        "400": { "value": "#a0b3b3" },
+        "500": { "value": "#788f8f" },
+        "600": { "value": "#5a7070" },
+        "700": { "value": "#425555" },
+        "800": { "value": "#2d3d3d" },
+        "900": { "value": "#182424" },
         "1000": { "value": "#000000", "description": "純黒" }
       }
     }
