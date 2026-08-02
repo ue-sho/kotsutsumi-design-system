@@ -117,7 +117,11 @@ pre-commit で staged ファイルに oxfmt、pre-push で全体 lint が走る�
 
 1. 変更ごとに `pnpm changeset` で changeset を作成
 2. main へのマージ後、GitHub Actions が release PR を自動更新
-3. release PR をマージすると npm publish が実行される（`NPM_TOKEN` が必要）
+3. release PR をマージすると npm publish が実行される（Trusted Publishing）
+
+Trusted Publishing を使うため、npm 側で `@kotsutsumi/tokens` と
+`@kotsutsumi/ui` に対して GitHub Actions の Trusted Publisher を設定する。
+`NPM_TOKEN` は不要。
 
 利用側は以下で導入できる。
 
