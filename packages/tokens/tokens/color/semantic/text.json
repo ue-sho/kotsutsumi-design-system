@@ -10,6 +10,10 @@
           "value": "{color.primitive.gray.700}",
           "description": "補足情報"
         },
+        "muted": {
+          "value": "{color.primitive.gray.600}",
+          "description": "二次情報よりさらに控えめな本文テキスト"
+        },
         "inverse": {
           "value": "{color.primitive.gray.0}",
           "description": "濃い背景の上に置く文字"
