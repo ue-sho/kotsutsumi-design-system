@@ -17,6 +17,10 @@
         "accent": {
           "value": "{color.primitive.brand.700}"
         },
+        "accent-subtle": {
+          "value": "{color.primitive.brand.600}",
+          "description": "補助的なブランド文言"
+        },
         "disabled": {
           "value": "{color.primitive.gray.500}"
         }

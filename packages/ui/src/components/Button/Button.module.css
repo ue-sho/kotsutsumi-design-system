@@ -17,9 +17,10 @@
   white-space: nowrap;
   cursor: pointer;
   transition:
-    background-color 0.15s ease,
-    border-color 0.15s ease,
-    color 0.15s ease;
+    background-color var(--kt-motion-duration-fast)
+      var(--kt-motion-easing-standard),
+    border-color var(--kt-motion-duration-fast) var(--kt-motion-easing-standard),
+    color var(--kt-motion-duration-fast) var(--kt-motion-easing-standard);
 }
 
 .button:focus-visible {

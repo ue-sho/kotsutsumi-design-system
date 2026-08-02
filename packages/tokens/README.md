@@ -13,6 +13,7 @@ tokens/
 │  └─ semantic/      用途で命名し primitive を参照
 ├─ spacing.json
 ├─ border.json       radius, borderWidth
+├─ motion.json       duration, easing
 └─ typography/       fontFamily, fontSize, fontWeight, lineHeight
 ```
 
@@ -38,6 +39,16 @@ tokens/
 ```
 
 コンポーネントは必ずセマンティック変数を参照する。プリミティブを直接参照するとテーマ切り替えができなくなる。
+
+## Motion トークン
+
+`motion.duration.*` と `motion.easing.*` を用意し、コンポーネントの transition は
+ハードコードせずトークン経由にする。
+
+```css
+transition: background-color var(--kt-motion-duration-fast)
+  var(--kt-motion-easing-standard);
+```
 
 ## 使い方
 
