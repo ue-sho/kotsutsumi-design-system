@@ -2,6 +2,10 @@
   "name": "@uesho/kotsutsumi-tokens",
   "version": "0.1.0",
   "description": "kotsutsumi デザインシステムのデザイントークン",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ue-sho/kotsutsumi-design-system"
+  },
   "publishConfig": {
     "access": "public"
   },
