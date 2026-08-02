@@ -1,2 +1,2 @@
-export { Link } from './Link';
-export type { LinkProps, LinkUnderline } from './Link';
+export { Link } from './Link/index';
+export type { LinkProps, LinkUnderline } from './Link/index';
