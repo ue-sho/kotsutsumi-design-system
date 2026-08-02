@@ -11,6 +11,10 @@
         "accent": {
           "value": "{color.primitive.brand.600}"
         },
+        "accent-subtle": {
+          "value": "{color.primitive.brand.300}",
+          "description": "弱いブランド境界線"
+        },
         "focus": {
           "value": "{color.primitive.brand.500}",
           "description": "フォーカスリング"

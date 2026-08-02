@@ -18,6 +18,9 @@
     "format": {
       "cache": false
     },
+    "format:check": {
+      "cache": false
+    },
     "dev": {
       "dependsOn": ["^build"],
       "cache": false,

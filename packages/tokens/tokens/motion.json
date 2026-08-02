@@ -1,0 +1,33 @@
+{
+  "motion": {
+    "duration": {
+      "instant": {
+        "value": "0ms",
+        "description": "状態同期のみ。視覚遷移なし"
+      },
+      "fast": {
+        "value": "120ms",
+        "description": "hover / active などの短い反応"
+      },
+      "normal": {
+        "value": "180ms",
+        "description": "標準の画面内トランジション"
+      },
+      "slow": { "value": "280ms", "description": "注目を促すやや長めの遷移" }
+    },
+    "easing": {
+      "standard": {
+        "value": "cubic-bezier(0.2, 0, 0, 1)",
+        "description": "積み上げるように素早く収束する基本カーブ"
+      },
+      "entrance": {
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "description": "要素表示時。終盤をやや丁寧に見せる"
+      },
+      "exit": {
+        "value": "cubic-bezier(0.7, 0, 1, 1)",
+        "description": "要素非表示時。残像を残さず素早く抜ける"
+      }
+    }
+  }
+}

@@ -13,6 +13,7 @@ tokens/
 │  └─ semantic/      用途で命名し primitive を参照
 ├─ spacing.json
 ├─ border.json       radius, borderWidth
+├─ motion.json       duration, easing
 └─ typography/       fontFamily, fontSize, fontWeight, lineHeight
 ```
 
@@ -38,6 +39,21 @@ tokens/
 ```
 
 コンポーネントは必ずセマンティック変数を参照する。プリミティブを直接参照するとテーマ切り替えができなくなる。
+
+## Motion トークン
+
+`motion.duration.*` と `motion.easing.*` を用意し、コンポーネントの transition は
+ハードコードせずトークン経由にする。
+
+```css
+transition: background-color var(--kt-motion-duration-fast)
+  var(--kt-motion-easing-standard);
+```
+
+## Neutral（gray）トークン
+
+`gray` は Layered Craft の方針に合わせ、青緑寄りの低彩度ランプとして定義する。
+ブランド色を邪魔せず、面の階層と可読性を安定させる役割を持つ。
 
 ## 使い方
 
@@ -68,6 +84,8 @@ import { tokens } from '@kotsutsumi/tokens';
 }
 ```
 
-## 既知の制約
+## 備考
 
-`--kt-font-family-sans` の値は空白を含むフォント名（`Hiragino Sans` 等）がクォートされずに出力される。全ブラウザが解釈するため実害はないが、厳密には CSS 仕様に沿わない。クォートが必要になった場合は Style Dictionary に custom transform を追加する。
+空白を含むフォント名（`Hiragino Sans` など）は Style Dictionary の custom
+transform で自動的にクォートして出力している。`serif` や `sans-serif` などの
+generic family はクォートしない。

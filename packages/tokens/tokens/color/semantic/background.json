@@ -8,7 +8,11 @@
         },
         "subtle": {
           "value": "{color.primitive.gray.100}",
-          "description": "面を一段下げたい領域の背景"
+          "description": "面を一段下げたい中立背景"
+        },
+        "accent-subtle": {
+          "value": "{color.primitive.brand.100}",
+          "description": "ブランド面を弱く敷く背景"
         },
         "accent": {
           "value": "{color.primitive.brand.600}",

@@ -30,6 +30,7 @@
     "lint:type": "tsc --noEmit",
     "lint-fix": "oxlint . --fix && oxfmt .",
     "format": "oxfmt .",
+    "format:check": "oxfmt --check .",
     "clean": "rm -rf dist storybook-static"
   },
   "peerDependencies": {
