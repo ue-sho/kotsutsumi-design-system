@@ -3,7 +3,7 @@
     "semantic": {
       "shadow": {
         "subtle": {
-          "value": "rgb(0 0 0 / 6%)",
+          "value": "{color.primitive.overlay.black-6}",
           "description": "影に使う中立の透過色"
         }
       }
