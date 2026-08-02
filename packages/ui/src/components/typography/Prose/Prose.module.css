@@ -31,34 +31,39 @@
   font-size: var(--kt-font-size-lg);
 }
 
-.prose :where(h1, h2, h3) {
+/*
+ * Element selectors below are limited to unclassed elements so that composed
+ * primitives (Heading, Text, Link) keep control of their own prop-driven
+ * styling instead of losing to `.prose` element rules.
+ */
+.prose :where(h1, h2, h3):not([class]) {
   margin: 0;
   color: var(--kt-color-semantic-text-primary);
   font-weight: var(--kt-font-weight-bold);
   line-height: var(--kt-line-height-tight);
 }
 
-.prose h1 {
+.prose h1:not([class]) {
   font-size: var(--kt-font-size-3xl);
 }
 
-.prose h2 {
+.prose h2:not([class]) {
   font-size: var(--kt-font-size-2xl);
 }
 
-.prose h3 {
+.prose h3:not([class]) {
   font-size: var(--kt-font-size-xl);
 }
 
-.prose :where(h2, h3) {
+.prose :where(h2, h3):not([class]) {
   margin-top: var(--kt-spacing-2xl);
 }
 
-.prose :where(h1, h2, h3) + p {
+.prose :where(h1, h2, h3) + p:not([class]) {
   margin-top: var(--kt-spacing-sm);
 }
 
-.prose p {
+.prose p:not([class]) {
   margin: var(--kt-spacing-md) 0 0;
 }
 
@@ -72,14 +77,14 @@
   margin-top: var(--kt-spacing-2xs);
 }
 
-.prose a {
+.prose a:not([class]) {
   color: var(--kt-color-semantic-text-accent);
   text-decoration-color: currentColor;
   text-decoration-thickness: from-font;
   text-underline-offset: 0.12em;
 }
 
-.prose a:hover {
+.prose a:not([class]):hover {
   color: var(--kt-color-semantic-text-accent-subtle);
 }
 

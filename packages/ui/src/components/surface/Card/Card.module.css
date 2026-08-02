@@ -9,12 +9,14 @@
 }
 
 .subtle {
+  border: var(--kt-border-width-thin) solid
+    var(--kt-color-semantic-border-default);
   background: var(--kt-color-semantic-bg-subtle);
 }
 
 .filled {
   background: var(--kt-color-semantic-bg-base);
-  box-shadow: 0 1px 2px rgb(0 0 0 / 6%);
+  box-shadow: var(--kt-shadow-sm);
 }
 
 .paddingSm {

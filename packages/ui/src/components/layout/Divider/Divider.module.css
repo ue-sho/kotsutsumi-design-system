@@ -15,15 +15,15 @@
 }
 
 .tonePrimary {
-  border-color: var(--kt-color-semantic-border-accent);
-}
-
-.toneSecondary {
   border-color: var(--kt-color-semantic-border-strong);
 }
 
-.toneMuted {
+.toneSecondary {
   border-color: var(--kt-color-semantic-border-default);
+}
+
+.toneMuted {
+  border-color: var(--kt-color-semantic-border-subtle);
 }
 
 .insetNone {

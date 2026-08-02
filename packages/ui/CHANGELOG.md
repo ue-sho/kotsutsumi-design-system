@@ -5,4 +5,5 @@
 ### Minor Changes
 
 - e1852db: Initialize public package release workflow with changesets and npm publishing.
-- Added `Text`, `Heading`, `Card`, `Inline`, `Divider`, and `EmptyState` primitives with the shared `tone` API.
+- 5a425e9: Add Storybook interaction testing setup with Vitest.
+- 2816625: Add and export additional UI primitives: `Container`, `Stack`, `Link`, and `Prose`.

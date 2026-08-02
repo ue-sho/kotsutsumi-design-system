@@ -43,7 +43,7 @@ const justifyClass: Record<InlineJustify, string> = {
 };
 
 export function Inline<T extends ElementType = 'div'>({
-  gap = 'md',
+  gap = 'sm',
   align = 'center',
   justify = 'start',
   wrap = false,

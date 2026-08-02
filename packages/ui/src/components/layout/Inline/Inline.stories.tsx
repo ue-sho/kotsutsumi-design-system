@@ -6,7 +6,7 @@ const meta = {
   title: 'Components/Layout/Inline',
   component: Inline,
   args: {
-    gap: 'md',
+    gap: 'sm',
     align: 'center',
     justify: 'start',
     wrap: false,
