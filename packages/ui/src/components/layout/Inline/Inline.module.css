@@ -1,0 +1,84 @@
+.inline {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.alignStart {
+  align-items: flex-start;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.alignEnd {
+  align-items: flex-end;
+}
+
+.alignStretch {
+  align-items: stretch;
+}
+
+.alignBaseline {
+  align-items: baseline;
+}
+
+.justifyStart {
+  justify-content: flex-start;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.justifyBetween {
+  justify-content: space-between;
+}
+
+.gapNone {
+  gap: var(--kt-spacing-none);
+}
+
+.gap3xs {
+  gap: var(--kt-spacing-3xs);
+}
+
+.gap2xs {
+  gap: var(--kt-spacing-2xs);
+}
+
+.gapXs {
+  gap: var(--kt-spacing-xs);
+}
+
+.gapSm {
+  gap: var(--kt-spacing-sm);
+}
+
+.gapMd {
+  gap: var(--kt-spacing-md);
+}
+
+.gapLg {
+  gap: var(--kt-spacing-lg);
+}
+
+.gapXl {
+  gap: var(--kt-spacing-xl);
+}
+
+.gap2xl {
+  gap: var(--kt-spacing-2xl);
+}
+
+.gap3xl {
+  gap: var(--kt-spacing-3xl);
+}

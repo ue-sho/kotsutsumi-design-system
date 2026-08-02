@@ -1,0 +1,55 @@
+.divider {
+  box-sizing: border-box;
+  flex: none;
+}
+
+.horizontal {
+  height: 0;
+  border-top: var(--kt-border-width-thin) solid;
+}
+
+.vertical {
+  width: 0;
+  align-self: stretch;
+  border-inline-start: var(--kt-border-width-thin) solid;
+}
+
+.tonePrimary {
+  border-color: var(--kt-color-semantic-border-accent);
+}
+
+.toneSecondary {
+  border-color: var(--kt-color-semantic-border-strong);
+}
+
+.toneMuted {
+  border-color: var(--kt-color-semantic-border-default);
+}
+
+.insetNone {
+  margin: var(--kt-spacing-none);
+}
+
+.horizontal.insetSm {
+  margin-inline: var(--kt-spacing-sm);
+}
+
+.horizontal.insetMd {
+  margin-inline: var(--kt-spacing-md);
+}
+
+.horizontal.insetLg {
+  margin-inline: var(--kt-spacing-lg);
+}
+
+.vertical.insetSm {
+  margin-block: var(--kt-spacing-sm);
+}
+
+.vertical.insetMd {
+  margin-block: var(--kt-spacing-md);
+}
+
+.vertical.insetLg {
+  margin-block: var(--kt-spacing-lg);
+}
