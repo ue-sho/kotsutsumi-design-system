@@ -1,0 +1,41 @@
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.sizeSm {
+  max-width: 40rem;
+}
+
+.sizeMd {
+  max-width: 48rem;
+}
+
+.sizeLg {
+  max-width: 64rem;
+}
+
+.sizeXl {
+  max-width: 72rem;
+}
+
+.sizeFull {
+  max-width: 100%;
+}
+
+.pxSm {
+  padding-inline: var(--kt-spacing-sm);
+}
+
+.pxMd {
+  padding-inline: var(--kt-spacing-md);
+}
+
+.pxLg {
+  padding-inline: var(--kt-spacing-lg);
+}
+
+.pxXl {
+  padding-inline: var(--kt-spacing-xl);
+}
