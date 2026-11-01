@@ -10,7 +10,8 @@
           "value": "{color.primitive.gray.300}"
         },
         "strong": {
-          "value": "{color.primitive.gray.400}"
+          "value": "{color.primitive.gray.600}",
+          "description": "入力欄など、識別が必要な境界。白・補助背景とのコントラスト比3:1以上。"
         },
         "accent": {
           "value": "{color.primitive.brand.600}"
@@ -21,7 +22,7 @@
         },
         "focus": {
           "value": "{color.primitive.brand.500}",
-          "description": "フォーカスリング"
+          "description": "キーボード操作のフォーカス。白・補助背景とのコントラスト比3:1以上。"
         }
       }
     }

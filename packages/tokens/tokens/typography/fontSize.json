@@ -1,11 +1,32 @@
 {
   "fontSize": {
-    "xs": { "value": "0.694rem" },
-    "sm": { "value": "0.833rem" },
-    "md": { "value": "1rem", "description": "本文の基準サイズ" },
-    "lg": { "value": "1.2rem" },
-    "xl": { "value": "1.44rem" },
-    "2xl": { "value": "1.728rem" },
-    "3xl": { "value": "2.074rem" }
+    "xs": {
+      "value": "0.75rem",
+      "description": "12px。日時・注釈などの補助情報。"
+    },
+    "sm": {
+      "value": "0.875rem",
+      "description": "14px。操作画面の補足・表。"
+    },
+    "md": {
+      "value": "1rem",
+      "description": "16px。本文の基準サイズ。"
+    },
+    "lg": {
+      "value": "1.25rem",
+      "description": "20px。小見出し。"
+    },
+    "xl": {
+      "value": "1.5rem",
+      "description": "24px。セクション見出し。"
+    },
+    "2xl": {
+      "value": "1.75rem",
+      "description": "28px。小さな画面のページ見出し。"
+    },
+    "3xl": {
+      "value": "2.25rem",
+      "description": "36px。ページ見出し。"
+    }
   }
 }
