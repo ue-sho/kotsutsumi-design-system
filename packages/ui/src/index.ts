@@ -2,3 +2,5 @@
 import '@uesho/kotsutsumi-tokens/tokens.css';
 
 export * from './components';
+
+export * from './components/data/Table';
