@@ -1,0 +1,52 @@
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--kt-spacing-sm);
+  padding: var(--kt-spacing-md);
+  border: var(--kt-border-width-thin) solid currentColor;
+  border-radius: var(--kt-radius-md);
+  font-family: var(--kt-font-family-sans);
+  line-height: var(--kt-line-height-normal);
+}
+.symbol {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  font-weight: var(--kt-font-weight-bold);
+}
+.body {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.title {
+  font-size: var(--kt-font-size-md);
+  font-weight: var(--kt-font-weight-bold);
+  margin: 0;
+  line-height: var(--kt-line-height-normal);
+}
+.content {
+  font-size: var(--kt-font-size-sm);
+  margin-top: var(--kt-spacing-xs);
+}
+.content p {
+  margin: 0;
+}
+.info {
+  color: var(--kt-color-semantic-text-accent);
+  background: var(--kt-color-semantic-bg-accent-subtle);
+}
+.success {
+  color: var(--kt-color-semantic-status-success);
+  background: var(--kt-color-semantic-status-success-subtle);
+}
+.warning {
+  color: var(--kt-color-semantic-status-warning);
+  background: var(--kt-color-semantic-status-warning-subtle);
+}
+.danger {
+  color: var(--kt-color-semantic-status-danger);
+  background: var(--kt-color-semantic-status-danger-subtle);
+}
