@@ -34,7 +34,8 @@
     "lint-fix": "oxlint . --fix && oxfmt .",
     "format": "oxfmt .",
     "format:check": "oxfmt --check .",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "test": "node --test scripts/tokens.test.js"
   },
   "devDependencies": {
     "oxfmt": "0.60.0",

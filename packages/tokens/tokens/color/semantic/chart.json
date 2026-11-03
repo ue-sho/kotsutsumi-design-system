@@ -1,0 +1,20 @@
+{
+  "color": {
+    "semantic": {
+      "chart": {
+        "electricity": {
+          "value": "{color.primitive.brand.600}",
+          "description": "電気の系列。操作や状態とは役割を分け、系列名・数値を併記する。"
+        },
+        "gas": {
+          "value": "{color.primitive.ochre.600}",
+          "description": "ガスの系列。警告を意味しない。系列名・数値を併記する。"
+        },
+        "water": {
+          "value": "{color.primitive.teal.600}",
+          "description": "水道の系列。正常を意味しない。系列名・数値を併記する。"
+        }
+      }
+    }
+  }
+}

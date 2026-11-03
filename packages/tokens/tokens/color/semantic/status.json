@@ -1,0 +1,32 @@
+{
+  "color": {
+    "semantic": {
+      "status": {
+        "success": {
+          "value": "{color.primitive.green.700}",
+          "description": "確認済み・正常。収入そのものには使わない。"
+        },
+        "success-subtle": {
+          "value": "{color.primitive.green.50}",
+          "description": "正常状態の補助背景。success の文字色を組み合わせる。"
+        },
+        "warning": {
+          "value": "{color.primitive.amber.700}",
+          "description": "期限接近など、確認が必要な状態。"
+        },
+        "warning-subtle": {
+          "value": "{color.primitive.amber.50}",
+          "description": "要確認の補助背景。warning の文字色と理由を添える。"
+        },
+        "danger": {
+          "value": "{color.primitive.red.700}",
+          "description": "異常・入力エラー・予算超過。支出そのものには使わない。"
+        },
+        "danger-subtle": {
+          "value": "{color.primitive.red.50}",
+          "description": "異常状態の補助背景。danger の文字色と理由を添える。"
+        }
+      }
+    }
+  }
+}

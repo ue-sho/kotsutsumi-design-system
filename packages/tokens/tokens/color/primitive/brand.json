@@ -2,16 +2,36 @@
   "color": {
     "primitive": {
       "brand": {
-        "50": { "value": "#f0f9f9", "description": "surface" },
-        "100": { "value": "#dcf1f2", "description": "subtle bg" },
-        "200": { "value": "#bce5e7" },
-        "300": { "value": "#8fd5d8", "description": "border" },
-        "400": { "value": "#5cc2c6" },
-        "500": { "value": "#2fa9ae", "description": "focus ring" },
-        "600": { "value": "#1d797c", "description": "メイン CTA" },
-        "700": { "value": "#175d60", "description": "hover" },
-        "800": { "value": "#114345", "description": "active" },
-        "900": { "value": "#0a2829", "description": "deep anchor" }
+        "50": {
+          "value": "#eff5ff"
+        },
+        "100": {
+          "value": "#dbe9ff"
+        },
+        "200": {
+          "value": "#b8d2ff"
+        },
+        "300": {
+          "value": "#8ab4ff"
+        },
+        "400": {
+          "value": "#528cff"
+        },
+        "500": {
+          "value": "#2563eb"
+        },
+        "600": {
+          "value": "#1749c6"
+        },
+        "700": {
+          "value": "#123a9e"
+        },
+        "800": {
+          "value": "#142f77"
+        },
+        "900": {
+          "value": "#152650"
+        }
       }
     }
   }

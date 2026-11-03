@@ -19,7 +19,8 @@
           "description": "濃い背景の上に置く文字"
         },
         "accent": {
-          "value": "{color.primitive.brand.700}"
+          "value": "{color.primitive.brand.600}",
+          "description": "リンク・操作・選択を示す Civic Blue。"
         },
         "accent-subtle": {
           "value": "{color.primitive.brand.600}",

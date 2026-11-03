@@ -36,15 +36,15 @@ pnpm storybook   # http://localhost:6006
 
 ルートから実行するとどちらのパッケージにも伝播する。
 
-| コマンド               | 内容                   |
-| ---------------------- | ---------------------- |
-| `pnpm build`           | 全パッケージをビルド   |
-| `pnpm storybook`       | Storybook 開発サーバ   |
-| `pnpm build-storybook` | Storybook を静的ビルド |
-| `pnpm lint`            | oxlint + oxfmt + tsc   |
-| `pnpm lint-fix`        | 自動修正               |
-| `pnpm changeset`       | リリースノート作成     |
-| `pnpm version-packages`| versions/changelog 更新 |
+| コマンド                | 内容                    |
+| ----------------------- | ----------------------- |
+| `pnpm build`            | 全パッケージをビルド    |
+| `pnpm storybook`        | Storybook 開発サーバ    |
+| `pnpm build-storybook`  | Storybook を静的ビルド  |
+| `pnpm lint`             | oxlint + oxfmt + tsc    |
+| `pnpm lint-fix`         | 自動修正                |
+| `pnpm changeset`        | リリースノート作成      |
+| `pnpm version-packages` | versions/changelog 更新 |
 
 個別のパッケージを叩く場合。
 
@@ -60,7 +60,7 @@ pnpm ui storybook
 プリミティブ（素の色値）とセマンティック（用途で命名）を分ける。
 
 ```
---kt-color-primitive-brand-600: #5940a8;
+--kt-color-primitive-brand-600: #1749c6;
 --kt-color-semantic-bg-accent: var(--kt-color-primitive-brand-600);
 ```
 
