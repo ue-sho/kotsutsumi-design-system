@@ -1,0 +1,47 @@
+.field {
+  display: grid;
+  gap: var(--kt-spacing-xs);
+  font: inherit;
+  color: var(--kt-color-semantic-text-primary);
+}
+.label {
+  display: flex;
+  align-items: center;
+  gap: var(--kt-spacing-sm);
+  min-height: 2.75rem;
+  width: fit-content;
+  cursor: pointer;
+}
+.control {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0;
+  accent-color: var(--kt-color-semantic-bg-accent);
+}
+.control:focus-visible {
+  outline: var(--kt-border-width-thick) solid
+    var(--kt-color-semantic-border-focus);
+  outline-offset: 3px;
+}
+.control:disabled {
+  cursor: not-allowed;
+}
+.label:has(.control:disabled) {
+  color: var(--kt-color-semantic-text-disabled);
+  cursor: not-allowed;
+}
+.required {
+  margin-left: var(--kt-spacing-xs);
+  font-size: var(--kt-font-size-xs);
+}
+.hint {
+  margin: 0;
+  font-size: var(--kt-font-size-sm);
+  color: var(--kt-color-semantic-text-secondary);
+}
+.error {
+  margin: 0;
+  font-size: var(--kt-font-size-sm);
+  color: var(--kt-color-semantic-status-danger);
+}
