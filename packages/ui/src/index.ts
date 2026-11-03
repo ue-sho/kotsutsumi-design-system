@@ -2,7 +2,6 @@
 import '@uesho/kotsutsumi-tokens/tokens.css';
 
 export * from './components';
-
-
+export * from './components/forms/Select';
 export * from './components/forms/Textarea';
 export * from './components/forms/TextField';
