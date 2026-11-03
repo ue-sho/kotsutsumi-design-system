@@ -3,6 +3,7 @@ import '@uesho/kotsutsumi-tokens/tokens.css';
 
 export * from './components';
 
+export * from './components/data/Table';
 export * from './components/feedback/Badge';
 export * from './components/feedback/Alert';
 export * from './components/forms/RadioGroup';
