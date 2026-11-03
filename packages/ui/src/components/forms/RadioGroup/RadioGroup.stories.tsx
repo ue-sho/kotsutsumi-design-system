@@ -36,3 +36,29 @@ export const Disabled: Story = { args: { disabled: true } };
 export const Error: Story = {
   args: { error: '集計期間を選んでください。', defaultValue: undefined },
 };
+export const ExternalForm: Story = {
+  args: { required: true, defaultValue: undefined, form: 'settings' },
+  render: (args) => (
+    <>
+      <form id="settings" aria-label="設定" />
+      <RadioGroup {...args} />
+    </>
+  ),
+  play: async ({ canvasElement }) => {
+    const c = within(canvasElement);
+    const form = c.getByRole<HTMLFormElement>('form', { name: '設定' });
+    await expect(form.checkValidity()).toBe(false);
+    await expect(new FormData(form).has('period')).toBe(false);
+
+    await userEvent.click(c.getByRole('radio', { name: '月ごと' }));
+    await expect(form.checkValidity()).toBe(true);
+    await expect(new FormData(form).getAll('period')).toEqual(['month']);
+
+    await userEvent.click(c.getByRole('radio', { name: '年ごと' }));
+    await expect(form.checkValidity()).toBe(true);
+    await expect(new FormData(form).getAll('period')).toEqual(['year']);
+
+    await userEvent.click(c.getByRole('radio', { name: '期間を指定' }));
+    await expect(new FormData(form).getAll('period')).toEqual(['year']);
+  },
+};

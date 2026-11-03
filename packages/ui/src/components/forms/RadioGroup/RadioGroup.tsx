@@ -33,6 +33,7 @@ export function RadioGroup({
   error,
   id,
   disabled,
+  form,
   className,
   'aria-describedby': describedBy,
   ...props
@@ -52,6 +53,7 @@ export function RadioGroup({
       {...props}
       id={groupId}
       disabled={disabled}
+      form={form}
       aria-describedby={description}
       aria-invalid={error ? true : props['aria-invalid']}
       className={[styles.group, className].filter(Boolean).join(' ')}
@@ -71,6 +73,7 @@ export function RadioGroup({
             className={styles.control}
             type="radio"
             name={name}
+            form={form}
             value={option.value}
             checked={value === undefined ? undefined : value === option.value}
             defaultChecked={
